@@ -11,5 +11,17 @@ function getPcChoice (){
         console.log("Scissors");
        // return "Scissors";
     }
-    
+}
+
+function playRound (){
+    let playerChoice = prompt("Please choose between Rock, Paper or Scissors.");
+    getPcChoice();
+
+    if(playerChoice === "rock"||"Rock"){
+        console.log(playerChoice);
+        console.log("test");
+    }else{
+        console.log("fail")
+    }
+
 }
