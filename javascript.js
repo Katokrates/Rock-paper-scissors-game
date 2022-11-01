@@ -1,27 +1,21 @@
+let pcChosen;
+
 function getPcChoice (){
     let pcChoice = Math.floor(Math.random() * 3);
 
     if(pcChoice == 0){
-        console.log("Rock");
-       // return "Rock";
+       pcChosen = "Rock";
     }else if(pcChoice == 1){
-        console.log("Paper");
-       // return "Paper";
+        pcChosen = "Paper";
     }else{
-        console.log("Scissors");
-       // return "Scissors";
+        pcChosen = "Scissors";
     }
 }
 
 function playRound (){
     let playerChoice = prompt("Please choose between Rock, Paper or Scissors.");
+    let playerTransformedChoide = playerChoice.toLowerCase();
+    console.log(playerTransformedChoide);
     getPcChoice();
-
-    if(playerChoice === "rock"||"Rock"){
-        console.log(playerChoice);
-        console.log("test");
-    }else{
-        console.log("fail")
-    }
-
+    
 }
